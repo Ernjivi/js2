@@ -10,6 +10,11 @@
 
     <!-- START: App -->
     <div id="app">
+        <input type="number" v-model="amount">
+        <button v-on:click="convert">Hit me!</button>
+        <div v-if="convertion">
+            {{ convertion }}
+        </div>
     </div>
     <!-- END: App -->
 
